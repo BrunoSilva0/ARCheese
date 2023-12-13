@@ -12,7 +12,7 @@ USE archeese;
 
 CREATE TABLE empresa (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	razao_social VARCHAR(50),
+	nome VARCHAR(50),
 	cnpj CHAR(14)
 );
 
