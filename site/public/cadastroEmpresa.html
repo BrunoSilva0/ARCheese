@@ -57,8 +57,8 @@
                          Assim que inserir vá para o script abaixo.
                      -->
           <div class="campo">
-            <span>Nome de usuario:</span>
-            <input id="nome_input" type="text" placeholder="Nome de Usuario" />
+            <span>Nome da empresa:</span>
+            <input id="nome_input" type="text" placeholder="Razão social" />
           </div>
           <div class="campo">
             <span>CNPJ:</span>
@@ -106,13 +106,12 @@
     var cnpjVar = cnpj_input.value;
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
-    var empresaVar = listaEmpresas.value
     if (
       nomeVar == "" ||
       emailVar == "" ||
       senhaVar == "" ||
       confirmacaoSenhaVar == "" ||
-      empresaVar == ""
+      cnpjVar == ""
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
@@ -136,7 +135,7 @@
         nomeServer: nomeVar,
         emailServer: emailVar,
         senhaServer: senhaVar,
-        empresaServer: empresaVar
+        cnpjServer: cnpjVar
       }),
     })
       .then(function (resposta) {
