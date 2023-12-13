@@ -1,9 +1,9 @@
 var express = require("express");
 var router = express.Router();
 
-var empresaController = require("../controllers/empresaController");
+var novaEmpresaController = require("../controllers/novaEmpresaController");
 
-router.get("/cadastrar", function (req, res) {
+router.post("/cadastrar", function (req, res) {
     novaEmpresaController.cadastrar(req, res);
   });
   

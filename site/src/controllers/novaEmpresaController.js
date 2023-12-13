@@ -1,20 +1,24 @@
-var empresaModel = require("../models/novaEmpresaModel");
+var novaEmpresaModel = require("../models/novaEmpresaModel");
 
 function cadastrar(req, res) {
-    var cnpj = req.body.cnpj;
-    var nome = req.body.nome;
-  
-    empresaModel.buscarPorCnpj(cnpj).then((resultado) => {
-      if (resultado.length > 0) {
-        res
-          .status(401)
-          .json({ mensagem: `a empresa com o cnpj ${cnpj} já existe` });
-      } else {
-        empresaModel.cadastrar(nome, cnpj).then((resultado) => {
-          res.status(201).json(resultado);
-        });
+    var cnpj = req.body.cnpjServer;
+    var nome = req.body.nomeServer;
+
+    novaEmpresaModel.cadastrar(nome,cnpj).then(
+      function (resultado) {
+        console.log("cheguei no then");
+          res.json(resultado);
       }
-    });
+  ).catch(
+      function (erro) {
+          console.log(erro);
+          console.log(
+              "\nHouve um erro ao realizar o cadastro! Erro: ",
+              erro.sqlMessage
+          );
+          res.status(500).json(erro.sqlMessage);
+      }
+  );
   }
 
   module.exports = {
