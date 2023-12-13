@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaTech | Tempo Real</title>
+    <title>ARCheese | Tempo Real</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dashboards.css">
@@ -19,20 +19,20 @@
         rel="stylesheet">
 </head>
 
-<body onload="exibirAquarios(),  atualizacaoPeriodica()">
+<body onload="validarSessao(), exibirAquarios(),  atualizacaoPeriodica()">
 
     <div class="janela">
 
         <div class="header-left dash-header">
 
-            <h1>AquaTech</h1>
+            <h1>ARCheese</h1>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
             </div>
 
             <div class="btn-nav">
-                <h3>Aquários</h3>
+                <h3>Salas</h3>
             </div>
 
             <div class="btn-nav-white">
@@ -56,28 +56,60 @@
         <div class="dash">
             <div id="alerta">
             </div>
-            <div class="regua">
+            <div class="regua">     
+                
+                <div class="tempUmid">
+                    <h3>Temperatura</h3>
+                </div>
+                <div class="informacao">
                 <div class="item-regua perigo-frio">
                     <h4>Perigo</h4>
-                    <h2>&lt;=5°C</h2>
+                    <h2>&lt;=3°C</h2>
                 </div>
                 <div class="item-regua alerta-frio">
                     <h4>Alerta</h4>
-                    <h2>&lt;=10°C</h2>
+                    <h2>&lt;=5°C</h2>
                 </div>
                 <div class="item-regua ideal">
                     <h4>Ideal</h4>
-                    <h2>20°C</h2>
+                    <h2>7°C a 14°C</h2>
                 </div>
                 <div class="item-regua alerta-quente">
                     <h4>Alerta</h4>
-                    <h2>&gt;=22°C</h2>
+                    <h2>&gt;=16°C</h2>
                 </div>
                 <div class="item-regua perigo-quente">
                     <h4>Perigo</h4>
-                    <h2>&gt;=23°C</h2>
+                    <h2>&gt;=18°C</h2>
                 </div>
             </div>
+
+            <div class="tempUmid">
+                <h3>Umidade</h3>
+            </div>
+            <div class="informacao">
+                <div class="item-regua perigo-frio">
+                    <h4>Perigo</h4>
+                    <h2>&lt;=70%</h2>
+                </div>
+                <div class="item-regua alerta-frio">
+                    <h4>Alerta</h4>
+                    <h2>&lt;=72%</h2>
+                </div>
+                <div class="item-regua ideal">
+                    <h4>Ideal</h4>
+                    <h2>75% a 95%</h2>
+                </div>
+                <div class="item-regua alerta-quente">
+                    <h4>Alerta</h4>
+                    <h2>&gt;=97%</h2>
+                </div>
+                <div class="item-regua perigo-quente">
+                    <h4>Perigo</h4>
+                    <h2>&gt;=99%</h2>
+                </div>
+            </div>
+        </div>
 
             <div class="cards" id="cardAquarios">
 

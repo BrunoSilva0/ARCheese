@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  background-color: #55525273;
 }
 
 .container {
@@ -254,8 +254,8 @@ input {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
+  border-right: 3px solid #ffd60a;
+  background-color: #55525273;
   /* border: 3px solid pink; */
 }
 
@@ -270,7 +270,7 @@ input {
 }
 
 .header-left h1 {
-  color: #32b9cd;
+  color: #ffd60a;
 }
 
 .hello {
@@ -280,7 +280,7 @@ input {
 }
 
 .hello h3 {
-  color: #e3b062;
+  color: #0373cf;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -292,7 +292,7 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #ffd60a;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -301,14 +301,14 @@ input {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid #ffd60a;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: #ffd500;
   padding: 0;
   margin: 0;
 }
@@ -323,7 +323,7 @@ input {
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: #32b9cd;
+  background-color: #0373cf;
   color: white;
   border-radius: 10px;
   text-align: center;

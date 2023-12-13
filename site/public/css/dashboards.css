@@ -29,6 +29,7 @@ body {
 
 .dash-right .avisos .container .div-form #form_postagem {
   width: 100%;
+  justify-content: center;
 }
 
 .dash-right .avisos .div-form label {
@@ -36,14 +37,14 @@ body {
 }
 
 .dash-right .avisos .div-form input {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
 }
 
 .dash-right .avisos .div-form textarea {
-  width: 100%;
+  width: 92%;
   /* color: #E6005A; */
-  border: 3px solid #e6005a;
+  border: 3px solid #ffd60a;
   background-color: white;
   border-radius: 5px;
 }
@@ -57,7 +58,8 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  margin-top: 3%;
+  background-color: #0373cf;
   width: 120px;
 }
 
@@ -119,17 +121,32 @@ body {
   position: relative;
   top: 0;
   left: 20%;
-  background-color: #161618;
+  background-color: #55525273;
   height: 100vh;
   overflow: auto;
 }
+
 
 .regua {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10%;
+}
+
+.tempUmid {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #ffd60a;
+}
+
+.informacao {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 .perigo-frio {
