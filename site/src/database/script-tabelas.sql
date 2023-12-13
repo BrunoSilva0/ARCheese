@@ -34,7 +34,6 @@ CREATE TABLE aviso (
 );
 
 create table Camara (
-/* em nossa regra de negócio, um Camara tem apenas um sensor */
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	descricao VARCHAR(300),
 	fk_empresa INT,
