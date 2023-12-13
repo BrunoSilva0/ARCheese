@@ -28,15 +28,9 @@
           <a href="#">Inicial</a>
         </li>
         <li>
-          <a href="simulador.html">Simulador</a>
+          <a href="dashboard/dashboard.html">Dashboard</a>
         </li>
-        <li>|</li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-        <li>
-          <a href="cadastro.html">Cadastro</a>
-        </li>
+        
       </ul>
     </div>
   </div>
@@ -56,10 +50,6 @@
                          Para inserir mais um campo, copie uma das inputs abaixo.
                          Assim que inserir vá para o script abaixo.
                      -->
-          <div class="campo">
-            <span>CNPJ:</span>
-            <input id="cnpj_input" placeholder="ex: 0123467891245" />
-          </div>
           <div class="campo">
             <span>Nome:</span>
             <input id="nome_input" placeholder="nome da empresa" />
@@ -105,14 +95,12 @@
 
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
-    var cnpjVar = cnpj_input.value;
     var nomeVar = nome_input.value;
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
     if (
-      cnpjVar = "" ||
       nomeVar == "" ||
       emailVar == "" ||
       senhaVar == "" ||
@@ -137,7 +125,6 @@
       body: JSON.stringify({
         // crie um atributo que recebe o valor recuperado aqui
         // Agora vá para o arquivo routes/usuario.js
-        cnpjServer: cnpjVar,
         nomeServer: nomeVar,
         emailServer: emailVar,
         senhaServer: senhaVar
